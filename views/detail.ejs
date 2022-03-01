@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= contact.nama %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= contact.nohp %></h6>
+    <p class="card-text"><%= contact.email %></p>
+    <a href="/contact/edit/<%= contact.nama %>" class="btn btn-info badge">Edit</a>
+    <a href="/contact/delete/<%= contact.nama %>" class="btn btn-danger badge" onclick="return confirm('Anda yakin ingin menghapus contact ini?')">Hapus</a>
+    <a href="/contact" class="card-link d-block mt-2">Kembali ke daftar kontak</a>
+  </div>
+</div>
