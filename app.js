@@ -176,6 +176,6 @@ app.use("/", (req, res) => {
   res.send("<h1>404</h1>");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`);
 });
